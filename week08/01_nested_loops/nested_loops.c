@@ -3,6 +3,7 @@
 void printTriangleTopLeftStars(int size);
 void printTriangleTopLeftNumbers(int size);
 void printTriangleBottomLeftStars(int size);
+void printTriangleTopLeftNumbersInc(int size);
 
 int main(void) {
 
@@ -15,7 +16,8 @@ int main(void) {
     } while (n <= 0);
 
     // printTriangleTopLeft(n);
-    printTriangleBottomLeftStars(n);
+    // printTriangleBottomLeftStars(n);
+    printTriangleTopLeftNumbersInc(n);
 
     // unsigned - only positive values
     // printf("i  | iter.\n");
@@ -64,7 +66,12 @@ void printTriangleBottomLeftStars(int size) {
 }
 
 void printTriangleTopLeftNumbersInc(int size) {
-
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size - i; j++) {
+            printf("%d", j+1);
+        }
+        puts("");
+    }
 }
 
 void printTriangleTopLeftNumbersDec(int size) {

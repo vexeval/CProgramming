@@ -14,3 +14,4 @@ Topics
 + week05 - Intro to *char* characters
 + week06 - While loops
 + week07 - Counter controlled iteration, sentinel loops, *do while*, for-loops
++ week08 - Nested loops, Pointers
