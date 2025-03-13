@@ -3,7 +3,7 @@
 // Split the given integer n into tens and ones.
 int splitDigits(int n, int *tens, int *ones);
 
-sumAndAvg(double d1, double d2, double *sum, double *avg);
+int sumAndAvg(double d1, double d2, double *sum, double *avg);
 
 int main(void) {
     int n = 29;
@@ -12,6 +12,10 @@ int main(void) {
 
     int result = splitDigits(n, &tens, &ones);
     // printf("%d\n", result);
+    double sum;
+    double avg;
+    int res2 = sumAndAvg(10, 5, &sum, &avg);
+    printf("%lf, %lf\n", sum, avg);
 
     printf("%d is %d tens and %d ones\n", n, tens, ones);
     return 0;
@@ -28,7 +32,7 @@ int splitDigits(int n, int *tens, int *ones) {
     return 0;
 }
 
-sumAndAvg(double d1, double d2, double *sum, double *avg) {
+int sumAndAvg(double d1, double d2, double *sum, double *avg) {
     *sum = d1 + d2;
     *avg = (d1 + d2)/2;
     return 0;
