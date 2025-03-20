@@ -9,14 +9,24 @@
 void printArray(int *arr, int size);
 void initArrayWithRandom(int *arr, int size, int left, int right);
 void setNegativeToZero(); // TODO
+int randRange(int minimum, int maximum); // Random range generator, inclusive.
 
 int main(void) {
     srand(time(0));
 
     int arr[SIZE];
 
+    // How to initialize an array with elements
+    int n[5] = {24, 48, 192, -49, 4}; 
+
     // Initialize the first element
     arr[0] = 999;
+    int tarr[5];
+    for (int i = 0; i < 5; i++) {
+        tarr[i] = 1;
+    }
+    printf("Tarr[9] %d\n",tarr[9]);
+    for (int i=0; i<5; i++) { printf("Rand generator: %d\n", randRange(0,2)); }
 
     // Initialize the last element
     arr[SIZE-1] = 111;
@@ -29,7 +39,7 @@ int main(void) {
         arr[i] = 1;
     }
 
-    printArray(arr, SIZE);
+    // printArray(arr, SIZE);
 
     // Reinitialize an array with the values from 10 to 100
     // 10 20 30 40 ... 100
@@ -39,12 +49,12 @@ int main(void) {
         bump += 10;
     }
 
-    printArray(arr, SIZE);
+    // printArray(arr, SIZE);
 
     // Reinitialize with random numbers from -20 to 20
     initArrayWithRandom(arr, SIZE, -100, 100);
 
-    printArray(arr, SIZE);
+    // printArray(arr, SIZE);
 
     return 0;
 }
@@ -62,4 +72,8 @@ void initArrayWithRandom(int *arr, int size, int left, int right) {
         // int randNum = rand() % (max - min + 1) + min;
         arr[i] = rand() % (right - left + 1) + left;
     }
+}
+
+int randRange(int minimum, int maximum) { 
+    return (rand() % (maximum - minimum + 1) + minimum);
 }
