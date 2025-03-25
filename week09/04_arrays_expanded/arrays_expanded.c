@@ -12,7 +12,7 @@ void printDoubledArray(const int *arr, int size);
 */
 int firstZero(const int *arr, int size);
 
-// TODO
+// TODO -- On Final
 int lastZero(const int *arr, int size);
 int secondZero(const int *arr, int size);
 int nthZero(const int *arr, int size, int n);
@@ -63,3 +63,15 @@ int firstZero(const int *arr, int size) {
     // no zeros
     return -1;
 }
+
+int lastZero(const int *arr, int size) {
+    for (int i = size - 1; i >= 0; i--) {
+        if (arr[i] == 0) {
+            return i;
+        }
+    }
+    
+    // no zeros
+    return -1;
+}
+
