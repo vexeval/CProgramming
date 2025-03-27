@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <ctype.h> // Common C functions [i.e islower()]
 
 int isLower(char c);
 int isUpper(char c);
