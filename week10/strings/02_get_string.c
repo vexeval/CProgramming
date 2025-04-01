@@ -12,6 +12,7 @@ int main(void) {
     fgets(str, SIZE-1, stdin);
 
     // Replace the ending \n with \0
+    //strlen - full length of the string including any new line escape
     str[strlen(str)-1] = '\0';
 
     // Remove the ending new line

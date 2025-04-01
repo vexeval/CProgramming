@@ -24,4 +24,9 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
+// 
+// strcpy - copy s2 into s1, returning value of s1
+// strcat - appends s2 to s1. The first character of s2 overwrites the terminating null chraacter of s1. Returns value of s1.
+// strcmp - Compares strings s1 with s2. The function returns 0, less than 0, or greater than 0 if s1 is equal to, less than, or greater than s2, respectively.
+
 // TODO: Compare two strings case insensitive
