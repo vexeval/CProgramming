@@ -18,3 +18,4 @@ Topics
 + week09 - Random range, pointer return multiple, arrays
 + week10 - Strings, command-line arguments
 + week11 - 2D arrays
++ week12 - Structures
