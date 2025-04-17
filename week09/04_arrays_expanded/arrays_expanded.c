@@ -25,6 +25,8 @@ int main(void) {
     int a[SIZE] = {9, 0, -4, 0, 987, 6};
     printDoubledArray(a, SIZE);
 
+    int t[2][5];
+
     // Linear search
     int has_zeros = firstZero(a, SIZE);
     if (has_zeros == -1) {
@@ -73,5 +75,9 @@ int lastZero(const int *arr, int size) {
     
     // no zeros
     return -1;
+}
+
+void getMatrix(int rows, int cols, int matrix[][]) {
+    
 }
 

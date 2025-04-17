@@ -43,13 +43,10 @@ int main(void) {
     // printStudentInfo(&st2);
 
     // Create a Class object
-    Class COP2271 = {.n_students = 3, .roster = {
-        st1, st2, st3
+    Class COP2271 = {.n_students = 2, .roster = {
+        st1, st2
     }};
 
-    // COP2271.n_students = 3;
-    // COP2271.roster[2] = st3;
-    // can make a function for this ^^
     addStudentToClass(&st3, &COP2271);
 
     printClassRoster(&COP2271);
@@ -90,7 +87,7 @@ void printClassRoster(const Class *class) {
 void addStudentToClass(const Student *student, Class *class) {
     if (class->n_students < CLASS_SIZE) {
         class->n_students += 1;
-        // class->roster[] += student; TODO FIX
+        class->roster[class->n_students - 1] = *student;
     }
     
 }
