@@ -47,6 +47,7 @@ int main(void) {
         st1, st2
     }};
 
+    // Add to the Class after its creation
     addStudentToClass(&st3, &COP2271);
 
     printClassRoster(&COP2271);

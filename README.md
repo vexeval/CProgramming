@@ -1,7 +1,7 @@
 # CProgramming
 Fundamental C Projects
 
-COP2271 class repository for learning the C programming langauge.
+COP2271 noting repository for learning the C programming langauge.
 
 Topics
 + 02_student_info - Conditions & handling static data, printing.

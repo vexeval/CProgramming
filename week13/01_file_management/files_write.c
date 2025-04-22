@@ -13,6 +13,8 @@ int main(int argc, char *argv[]) {
         if (i != 100) { fprintf(file, "\n"); }
     }
 
+    // fprintf(file, "Hey %s", name);
+
     // fprintf();
     // fscanf();
 
